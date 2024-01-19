@@ -29,7 +29,6 @@ permalink: /random
 
         let articles = [];
         {% for post in site.posts %}
-            console.log("{{ post.url }}")
             articles.push("{{ post.url }}") 
         {% endfor %}
 
