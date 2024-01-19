@@ -13,6 +13,9 @@
         text-align: center;
         margin: 7% 0;
     }
+}
+
+@media (max-width: 1250px){
     ul, ol{
         padding-left: 4%;
     }
