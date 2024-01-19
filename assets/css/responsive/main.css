@@ -13,8 +13,8 @@
         text-align: center;
         margin: 7% 0;
     }
-    ul{
-        list-style-type: none;
+    ul, ol{
+        padding-left: 4%;
     }
 }
 
