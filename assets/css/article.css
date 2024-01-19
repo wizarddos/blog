@@ -1,0 +1,36 @@
+.article{
+    font-size: 20px;
+    text-align: justify;
+    width: 80%;
+    text-align: justify;
+    word-wrap: break-word;
+    background-color: #427AA1;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+.article > div > div > pre{
+    background-color: rgb(32, 32, 32);
+    font-size: 18px;
+    padding: 1%;
+    border-radius: 8px;
+
+    overflow: auto;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.centered{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.category{
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+}

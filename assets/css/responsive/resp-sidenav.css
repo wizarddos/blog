@@ -1,0 +1,49 @@
+@media (max-width: 890px){
+    .sidenav.hidden{
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+
+    .sidenav{
+        z-index: 10;
+        position: sticky;
+        top: 8%;
+        height: auto;
+        margin: 0;
+        padding: 2%;
+        width: 100% !important;
+        -webkit-transition: visibility 0s, opacity 0.5s ease-in;
+        -moz-transition: visibility 0s, opacity 0.5s ease-in;
+        -o-transition: visibility 0s, opacity 0.5s ease-in;
+        transition: visibility 0s, opacity 0.5s ease-in;
+    }
+
+    .sidenav > ul{
+        list-style-type: none;
+    }
+
+
+    .main.darken{
+        opacity: 0.5;
+    }
+
+
+    .main{
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+    }
+
+    .content{
+        display: contents;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    .sidenav{
+        width: 30%;
+    }
+}

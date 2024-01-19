@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /categories/maths
+title: Category
+---
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/categories.css">
+<section class="block article">
+    <h1 class = "centered">Category - {{ site.data.categories[3].name }}</h1>
+    {% for post in site.categories['Maths'] %}
+        <article class="post">
+          <h3>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h3><br/>
+          <div>
+            <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+          </div>
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><br/>
+              Read More
+          </a>
+        </article>
+      {% endfor %}
+</section>

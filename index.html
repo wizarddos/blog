@@ -1,0 +1,35 @@
+---
+layout: default
+title: Home
+---
+            <section class = "intro block">
+                <img src="assets/img/ProfilePic.jpeg" class = "pfp-img" alt="My frequent profile picture">
+                <section class="intro-text">
+                    <p class="message">
+                        <span class = "owner-quote">wizarddos:</span>
+                        <br/>
+                        You have successfully reached the edge of the internet
+                        <br/>
+                        Welcome on my blog 
+                    </p>
+                </section>
+            </section>
+            <section class = "newest articles-tab block">
+                {% assign post = site.posts.first %}
+                <h3 class = "section-heading">Newest article: {{ post.title }}</h3><br/>
+                <p>
+                    {{ post.excerpt }}
+                </p>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><br/>
+                    Read More
+                </a>
+            </section>
+            <section class = "articles-tab block">
+                <h2>What is this place?</h2>
+                <p>
+                    Here, I'd like to share my knowledge with you dear reader
+                    <br/>
+                    You will be able to find there many articles and maybe some videos connected to IT and other STEM subjects like maths
+                    <br/><br/>
+                    Want to know more about me? Check out <a href="{{ site.baseurl }}/author">my page</a>
+            </section>
