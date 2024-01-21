@@ -1,2 +1,5 @@
 markdown: kramdown
 highlighter: rouge
+url: "https://wizarddos.github.io/blog" 
+plugins:
+  - jekyll-sitemap
