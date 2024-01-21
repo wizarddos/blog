@@ -4,4 +4,6 @@ a.read-more{
 
 .post{
     margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: #CFDFF7 3px solid;
 }
