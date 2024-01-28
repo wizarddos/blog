@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Variable variables - depths of PHP docs pt. 2 
+title: Quick guide for PHP exceptions 
 author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
