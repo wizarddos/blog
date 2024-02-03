@@ -21,6 +21,8 @@
 
     .sidenav > ul{
         list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
 
@@ -38,6 +40,11 @@
 
     .content{
         display: contents;
+    }
+
+    .sidenav-ul > li > a{
+        display: inline-block;
+        width: 100%;
     }
 }
 

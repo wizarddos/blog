@@ -22,7 +22,7 @@
     white-space: pre;
 }
 
-.article ol,ul{
+.article > ol,ul{
     margin-left: 3%;
 }
 
