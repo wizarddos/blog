@@ -3,3 +3,4 @@ highlighter: rouge
 url: "https://wizarddos.github.io/blog" 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
