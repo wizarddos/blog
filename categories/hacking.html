@@ -22,4 +22,11 @@ title: Category
           </a>
         </article>
       {% endfor %}
+      {%  assign pnumber = site.categories['Hacking'] |  size%}
+      {% if pnumber == 0 %}
+        <p style = "text-align: center;">
+          No posts found - but don't worry.<br/>
+          This section will soon be filled with content 
+        </p>
+      {% endif %} 
 </section>
