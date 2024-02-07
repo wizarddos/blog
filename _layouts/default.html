@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/responsive/resp-article.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/responsive/resp-sidenav.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/contact.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/newsletter.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKH8YY71X4"></script>
@@ -78,6 +79,25 @@
                 <a href="{{site.baseurl}}/author">About me</a><br/>
                 <a href="{{site.baseurl}}/contact">Contact</a>
             </div>
+            <br><br/>
+
+            <form
+            action="https://buttondown.email/api/emails/embed-subscribe/wizarddos"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/wizarddos', 'popupwindow')"
+            class="embeddable-buttondown-form nsl-form"
+          >
+            <label for="bd-email" class ="nsl-label"><p class = "nsl-p">
+                Subscribe to my newsletter and don't miss any new article
+            </p></label>
+            <input type="email" name="email" id="bd-email" class = "nsl-email" placeholder = "Your email here"/>
+            <br/>
+            <input type="submit" value="Subscribe" class = "nsl-sign"/>
+            <p>
+              <a href="https://buttondown.email/refer/wizarddos" class = "nsl-label" target="_blank">Powered by Buttondown.</a>
+            </p>
+          </form>
         </nav>
         <main class = "main">
             {{ content }}
