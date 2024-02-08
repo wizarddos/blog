@@ -1,0 +1,2 @@
+User-Agent: *
+Disallow: /blog/404.html, /blog/random.html, /blog/assets/
