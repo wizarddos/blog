@@ -12,6 +12,51 @@ comments: true
         Published: {{ page.date | date_to_string }} <br/>
         Author: {{ page.author }}
     </p>
+    <br/><br/>
+    {%  if page.is_series == true %}  
+        <p class="centered">Series: {{ page.series_title |  replace: "_", " " }}</p>
+        {% assign series = site.posts | where_exp:"post", "post.series_title == page.series_title" |  reverse %}
+
+        <div class="jump-to-part">
+
+            
+            {% assign prevPart = page.part | minus: 1 %}
+            {% assign nextPart = page.part | plus: 1 %}
+
+            {% if prevPart >= 0 %}
+                <a href="{{ site.baseurl 
+                            | append: '/' 
+                            | append: page.category |  downcase
+                            | append: '/' 
+                            | append: page.series_title 
+                            | append: '/' 
+                            | append: prevPart }}" 
+                class="series-part-link">
+                    <b>Previous part:</b>
+                    <br/> 
+                    <span class="jump-title">{{ series[prevPart].title }}</span>
+                </a>
+            {% endif %}
+
+            
+
+            {% if series[nextPart] %}
+                <a href="{{ site.baseurl 
+                            | append: '/' 
+                            | append: page.category |  downcase
+                            | append: '/' 
+                            | append: page.series_title 
+                            | append: '/' 
+                            | append: nextPart }}" 
+                class="series-part-link next-part">
+                    <b>Next part:</b>
+                    <br/> 
+                    <span class="jump-title">{{ series[nextPart].title }}</span>
+                </a>
+            {% endif %}
+
+        </div>
+    {% endif %} 
     <br><br><br>
         <div id="disqus_thread"></div>
         <script>

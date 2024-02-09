@@ -5,6 +5,9 @@ author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
 permalink: /programming/PHP_0_to_hero/13
+is_series: true
+series_title: "PHP_0_to_hero"
+part: 13
 ---
 
 Welcome - It's 13th part of this course

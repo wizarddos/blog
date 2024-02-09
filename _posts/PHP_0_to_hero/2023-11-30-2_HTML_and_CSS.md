@@ -1,10 +1,13 @@
 ---
 layout: post
-title: HTML and CSS Basics - PHP 0 to hero pt.1
+title: HTML and CSS Basics - PHP 0 to hero pt.2
 author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
 permalink: /programming/PHP_0_to_hero/2
+is_series: true
+series_title: "PHP_0_to_hero"
+part: 2
 ---
 
 What's up? That's me again - Welcome in another part of this course

@@ -38,3 +38,28 @@
 img{
     width: 100%;
 }
+
+.jump-to-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.series-part-link{
+    display: block;
+    width: 30%;
+    padding: 2%;
+
+    border: #071020 3px solid;
+    border-radius: 3px;
+}
+
+.jump-title{
+    text-decoration: underline;
+}
+
+.next-part{
+    margin-left: auto;
+    text-align: right;
+}

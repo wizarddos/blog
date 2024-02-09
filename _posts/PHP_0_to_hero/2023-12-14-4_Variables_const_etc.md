@@ -5,6 +5,9 @@ author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
 permalink: /programming/PHP_0_to_hero/4
+is_series: true
+series_title: "PHP_0_to_hero"
+part: 4
 ---
 
 Welcome back - Today we will be learning about one of the most important concepts of programming - storing data
