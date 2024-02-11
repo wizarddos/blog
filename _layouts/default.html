@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome on my blog. Here you will find everything about coding, hacking, maths, computer science and other topics">
+    <link rel="shortcut icon" href="{{site.baseurl}}/assets/img/favicon-black.png" type="image/x-icon">
     <title>{{ page.title }} - wizarddos Blog</title>
 
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
@@ -34,29 +35,29 @@
 <body>
     <header>
         <h2 class = "side-menu">
-            <button id = "open-menu"><i class="fa-solid fa-bars icon"></i></button>
+            <button id = "open-menu" aria-label="Open menu"><i class="fa-solid fa-bars icon"></i></button>
         </h2>
         <h2>
-            <a href="{{site.baseurl}}/">
+            <a href="{{site.baseurl}}/" aria-label="Get to home page">
                 <i class="fa-solid fa-house icon"></i> 
                 <span class="text">Home Page</span>
             </a>
         </h2>
 
         <h2>
-            <a href="{{site.baseurl}}/random">
+            <a href="{{site.baseurl}}/random" aria-label="See random article">
                 <i class="fa-solid fa-shuffle icon"></i> 
                 <span class = "text">Suprise me!</span>
             </a>
         </h2>
         <h2>
-            <a href="{{site.baseurl}}/author">
+            <a href="{{site.baseurl}}/author" aria-label="Learn about the authon">
                 <i class="fa-solid fa-user-gear icon"></i>
                 <span class="text">Author</span>
             </a>
         </h2>
         <h2>
-            <a href="{{site.baseurl}}/contact">
+            <a href="{{site.baseurl}}/contact" aria-label="Contact me via email">
                 <i class="fa-solid fa-envelope fa-xs icon"></i>
                 <span class = "text">Contact</span>
             </a>
