@@ -4,3 +4,8 @@ url: "https://wizarddos.github.io/blog"
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+collections: 
+  series:
+    output: true
+  categories:
+    output: true

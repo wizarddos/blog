@@ -2,7 +2,7 @@
 layout: post
 title: Quick guide for linux privileges
 author: wizarddos
-category: CS
+category: cs-in-general
 excerpt_separator: <!--more-->
 ---
 Hi there

@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /series/{{ page.series_title }}
+series_title: {{ page.series_title }}
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/categories.css">
+<section class="block article">
+    <h1 class = "centered">{{ page.title}} - series</h1>
+
+    {% assign series_posts = site.posts | where_exp:"post", "post.series_title == page.series_title" |  reverse %}
+    
+    {% for post in series_posts %}
+      <article class="post">
+        <h3>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h3><br/>
+        <div>
+          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><br/>
+            Read More
+        </a>
+      </article>
+    {% endfor %}
+
+</section>
