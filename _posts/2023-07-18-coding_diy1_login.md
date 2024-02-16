@@ -79,7 +79,7 @@ Now, click `start` button next to `Apache` and `MySQL`
 
 Why? Apache is our PHP server and MySQL is our database (DBMS to be more precise)
 
-Ok, last thing to do, is to visit [http://localhost/login-form](http://localhost/login-form)
+Ok, last thing to do, is to visit `http://localhost/login-form`
 
 You can either click this link, or write it manually as an URL
 
@@ -181,7 +181,7 @@ First part is over, now let's do database connected stuff.
 
 ### 4. Database creation
 
-Start with visiting [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+Start with visiting `http://localhost/phpmyadmin`
 Then find `new` on the sidenav
 
 You should see window like this
@@ -468,7 +468,7 @@ if(!isset($_SESSION['isLoged'])){
 ```
 
 
-Now, without logging in, try to visit [http://localhost/login-form/index.php](http://localhost/login-form/index.php)
+Now, without logging in, try to visit `http://localhost/login-form/index.php`
 
 We can't do it now. That's what we wanted.
 Only authenticated users can access that page

@@ -143,7 +143,7 @@ I think that's it for now - second part is updating our database
 
 ### Database update
 
-Get to [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+Get to `http://localhost/phpmyadmin`
 
 We need a new table - I'll call it `messages` and it will contain 5 columns
 
