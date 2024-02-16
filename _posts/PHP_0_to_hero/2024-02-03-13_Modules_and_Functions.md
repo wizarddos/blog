@@ -4,9 +4,9 @@ title: Functions, include and require. PHP modules - PHP 0 to hero pt.13
 author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
-permalink: /programming/PHP_0_to_hero/13
+permalink: /programming/php_0_to_hero/13
 is_series: true
-series_title: "PHP_0_to_hero"
+series_title: "php_0_to_hero"
 part: 13
 ---
 

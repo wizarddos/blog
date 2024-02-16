@@ -4,9 +4,9 @@ title: Variables, constants, arrays, superglobals - PHP 0 to hero pt.4
 author: wizarddos
 category: Programming
 excerpt_separator: <!--more-->
-permalink: /programming/PHP_0_to_hero/4
+permalink: /programming/php_0_to_hero/4
 is_series: true
-series_title: "PHP_0_to_hero"
+series_title: "php_0_to_hero"
 part: 4
 ---
 
