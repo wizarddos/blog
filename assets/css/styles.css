@@ -86,3 +86,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+.small-text{
+    font-size: x-large;
+}
