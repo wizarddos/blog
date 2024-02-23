@@ -553,7 +553,7 @@ checkQuantity($price, $quantity);
 
 Now I can finally say - That's it
 
-## TL:DR - rules on what should you remember
+## TL:DR - best practices in bullet points
 1. Give meaningful names to your variables
 2. Split code into functions, classes or namespaces
 3. DRY
