@@ -71,3 +71,12 @@ code.language-plaintext{
 
     padding: 3px 5px;
 }
+
+blockquote{
+    padding-left: 10px;
+    border-left: #316990 10px solid;
+}
+
+blockquote > p{
+    color: #BECDD6;
+}
