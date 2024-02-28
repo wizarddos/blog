@@ -10,7 +10,7 @@ Have you ever looked at the code and thought, "What is this mess"?
 
 After a while, you can even say such thing about your own "masterpieces"
 
-But remember, code review is part of the journey and perfect way to become 10x developer
+But remember, code review is part of the journey and a perfect way to become 10x developer
 <!--more-->
 
 ![Only true code quality measure](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q26zj89p6q18a6enss4m.png)
