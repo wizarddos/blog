@@ -80,3 +80,7 @@ blockquote{
 blockquote > p{
     color: #BECDD6;
 }
+
+.img-small{
+    width: 10%;
+}
