@@ -84,3 +84,7 @@ blockquote > p{
 .img-small{
     width: 10%;
 }
+
+.subtext{
+    font-size: x-small;
+}

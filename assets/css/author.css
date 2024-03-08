@@ -23,8 +23,10 @@
 }
 
 .skills{
+    width: 70%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 2% auto;
 }
 
 .commisions{
@@ -32,15 +34,17 @@
     text-align: center;
 }
 
-.it-skills{
-    width: 10%;
+.skill-section{
+    width: 50%;
+    list-style-position: inside;
 }
 
-@media (max-width: 815px){
-    .desc-with-img{
-        display: block;
-    }
+.skill-list{
+    margin: 0 auto;
+}
 
+
+@media (max-width: 815px){
     .desc{
         width: 95%;
         margin-left: auto;
@@ -59,10 +63,23 @@
     .skills{
         text-align: center;
         margin: 2px auto;
+        flex-direction: column;
+        width: 90%;
     }
 
-    .skill-section{
-        width: 50%;
-        list-style-position: inside;
+}
+
+@media (max-width: 1200px){
+    .desc-with-img{
+        display: block;
+    }
+
+    .img{
+        width: 70%;
+        margin: 2px auto;
+    }
+
+    .desc{
+        width: 90%;
     }
 }
