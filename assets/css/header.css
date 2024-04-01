@@ -13,6 +13,11 @@ header{
 
 .header-item{
     font-size: 40px;
+    text-decoration: none;
+}
+
+.header-item:hover{
+    text-decoration: underline;
 }
 
 .side-menu{

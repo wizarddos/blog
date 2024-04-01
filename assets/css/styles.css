@@ -78,13 +78,13 @@ section{
 
 a{
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     color: #F7FFF6;
 }
 
 
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .small-text{

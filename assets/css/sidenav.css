@@ -22,3 +22,11 @@
     margin-top: 10%;
     font-size: medium;
 }
+
+.sidenav-link{
+    text-decoration: none;
+}
+
+.sidenav-link:hover{
+    text-decoration: underline;
+}

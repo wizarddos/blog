@@ -8,7 +8,9 @@ comments: true
     <h1 class = "centered">{{ page.title}} </h1>
     <p class = "centered category"><a href = "{{ site.baseurl }}/categories/{{ page.category | downcase }}">{{ page.category }}</a></p><br/>
     {% include series-navigation.html %}
-    {{ content | newline_to_br }}
+    <div class="article-text">
+        {{ content }}
+    </div>
     <p>
         Published: {{ page.date | date_to_string }} <br/>
         Author: {{ page.author }}

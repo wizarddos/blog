@@ -1,8 +1,7 @@
 .article{
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     width: 80%;
-    text-align: justify;
     word-wrap: break-word;
     background-color: #427AA1;
     border-radius: 5px;
@@ -10,7 +9,7 @@
     padding: 2%;
 }
 
-.article > div > div > pre{
+pre.highlight, code.language-plaintext{
     background-color: rgb(32, 32, 32);
     font-size: 18px;
     padding: 1%;
@@ -22,10 +21,18 @@
     white-space: pre;
 }
 
-.article > ol,ul{
+code.language-plaintext{
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.article-text > ol,ul{
     margin-left: 3%;
 }
 
+.article-text > ol,ul > li{
+    margin-bottom: 2%;
+}
 .centered{
     text-align: center;
     margin-bottom: 2%;
@@ -65,13 +72,6 @@ img{
     text-align: right;
 }
 
-code.language-plaintext{
-    background-color: #2e2e2e;
-    border-radius: 4px;
-
-    padding: 3px 5px;
-}
-
 blockquote{
     padding-left: 10px;
     border-left: #316990 10px solid;
@@ -87,4 +87,8 @@ blockquote > p{
 
 .subtext{
     font-size: x-small;
+}
+
+.article-text > *{
+    padding: 1%;
 }

@@ -10,9 +10,7 @@ series_title: "php_0_to_hero"
 part: 13
 ---
 
-Welcome - It's 13th part of this course
-
-Today, we will get to something chill and easy - so we can rest a little after previous 4 parts of - I need to admit this - intensive work
+Today, we will get to something chill and easy - so we can rest a little after previous 4 parts of, intensive work.
 
 We'll focus on creating clean code and dividing it into modules
 
@@ -45,11 +43,11 @@ protagnist_death();
 
 How do we declare them?
 
-### Declarating functions
+### Declaring functions
 
 We declare them in blocks - using `function` keyword
 
-Let's say we we need to validate a password - is it at least 8 characters, doesn't it contain username etc.
+Let's say we need to validate a password - is it at least 8 characters, doesn't it contain username etc.
 
 So - start with the function.
 
@@ -63,7 +61,7 @@ As you see, we specify that this is a function
 Then declarate it's name
 And open brackets for arguments
 
-Basically it's good practice to pass every required variable as an argument - so we operate only on them or also on variables declarated inside the function
+It's a good practice to pass every required variable as an argument - so we operate only on them or also on variables declared inside the function
 
 Here we only have one but we can always add more
 
@@ -94,7 +92,8 @@ As you see, I hadn't wrote curly brackets in `if` statements - that's just a sho
 
 If you write one line, you don't have to create a big block - just indicate that `return` is meant to execute after condition is met and that's it
 
-And what's that `return`? It's basically what will remain after the execution (If you understand that concept from maths - it's like `y`)
+And what's that `return`? 
+It communicates what will remain after the execution and will get passed to code calling it (If you understand functions from maths - it's like `y`)
 
 So, let's now write a program that will use this function
 
@@ -110,7 +109,7 @@ echo validatePassword($password_g, $length, $username_g);
 
 As you see, we call a function and pass our arguments - it then returns us the result
 
-So, with that declarated variables - the interpreter will see this
+So, with that declared variables - the interpreter will see this
 
 ```php
 $username_g = "test1";
@@ -120,9 +119,9 @@ $length = 8;
 echo "Password correct";
 ```
 
-And that's exactly what we have written in last return case 
+And that's exactly what we have written in the last return case 
 
-You can test this code with multiple data, but let's now jump to another thing
+You can test this code with multiple data, but for now, let's move on to another thing
 
 ## Including files in PHP code
 
@@ -193,8 +192,8 @@ require "header.php";
 Our script will crash and throw a fatal error (E_COMPILE_ERROR).
 
 
-So, when we have some crucial mechanisms - use `require`
-If site will work fine without it, or could just display an error - use  `include`
+So, when we have some crucial mechanisms, use `require`
+If site will work fine without it, or could just display an error, use  `include`
 
 
 Now, the last thing about those statements
@@ -207,7 +206,7 @@ They are used exactly the same and have the same differences - but how they diff
 
 If you happen to have some code, that might include the same file twice, using `*_once` variant will include it only once
 
-So, if we included something twice - like here
+So, if we included something twice, like here
 
 ```php
 require_once "config.php";
@@ -224,15 +223,15 @@ $db_pass = "";
 // [...] Some code [...]
 ```
 
-Without redeclarating variables in the code
+Without redeclaring variables in the code
 
 ### Which one is the best? 
 
 Right now, If you write clean code, it doesn't matter which one you use. 
 
-Personally - I mostly utilize `require_once`. But that's more of a habit.
+Personally, I mostly utilize `require_once`. But that's more of a habit.
 
-So, choice is yours!
+So, the choice is yours!
 
 ## Conclusion
 
