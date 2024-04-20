@@ -57,6 +57,8 @@ What's in the [docs](https://html.spec.whatwg.org/multipage/syntax.html#start-ta
 
 According to specs: trialing slashes are fully optional in void tags and have no effect, but might cause issues later on.
 
+What issues? As said, if you write HTML properties without quotes, then parser might interpret that slash as a part of an attribute rather than end of a tag.  
+
 Why is it even there in the first place? For **backward compatibility**
 
 Currently used HTML version is HTML5 - but your documents can also be rendered in other modes 
@@ -70,8 +72,10 @@ If slashes went missing, XHTML parser could not distinguish whether such tag clo
 
 This might be disappointing but... **use whatever you want to**!
 
-For some people, not writing that slash can save time
-Some people prefer the trailing slash because it makes the code more readable, as it clearly marks the end of the tag.
+If you write HTML properties without quotes, then omiting that slash will be safer choice
+
+Yet, for some people, not writing it can save time
+Others prefer the trailing slash, as it makes the code more readable. It clearly marks the end of the tag.
 
 Personally, I'm a fan of a second option
 
