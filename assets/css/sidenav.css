@@ -1,8 +1,7 @@
 .sidenav{
-    width: 25%;
+    width: 15%;
     height: 25em;
-    padding: 3%;
-    margin-left: 3%;
+    padding: 1%;
     visibility: visible;
 
     position: sticky;
@@ -29,4 +28,8 @@
 
 .sidenav-link:hover{
     text-decoration: underline;
+}
+
+.sidenav-ul{
+    font-size: 20px;
 }

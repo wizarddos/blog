@@ -1,3 +1,4 @@
+@import url(colors.css);
 .contact{
     text-align: center;
     height: 100%;
@@ -8,7 +9,7 @@
 .control{
     padding: 1%;
     color: black;
-    background-color: #CFDEE7;
+    background-color: var(--color-light);
     border-radius: 5px;
 }
 
@@ -23,7 +24,7 @@ textarea{
 }
 
 .submit{
-    background-color: #CFDEE7;
+    background-color: var(--color-light);
     width: 25%;
     padding: 1.5%;
     color: black;

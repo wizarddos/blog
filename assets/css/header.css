@@ -1,11 +1,11 @@
-
+@import url(colors.css);
 header{
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    background-color: #071020;
+    background-color: var(--color-blue);
     z-index: 15;
     position: sticky;
     top: 0;

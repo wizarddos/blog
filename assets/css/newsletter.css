@@ -1,8 +1,4 @@
-.nsl-form{
-    border: #071020 4px solid;
-    border-radius: 5px;
-    padding: 2%;
-}
+@import url(colors.css);
 
 .nsl-label{
     font-size: medium;
@@ -20,14 +16,14 @@
 .nsl-email{
     width: 90%;
     border-radius: 5px;
-    color: #071013;
+    color: var(--color-dark);
     padding: 1%;
 }
 
 .nsl-sign{
-    background-color: #071020;
+    background-color: var(--color-blue);
     padding: 1%;
-    border: #071020 2px solid;
+    border: var(--color-blue) 2px solid;
     border-radius: 5px;
     margin-top: 5px;
 }

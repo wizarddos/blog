@@ -1,9 +1,9 @@
+@import url(colors.css);
 .article{
     font-size: 20px;
     text-align: left;
-    width: 80%;
+    width: 85%;
     word-wrap: break-word;
-    background-color: #427AA1;
     border-radius: 5px;
     margin-bottom: 3%;
     padding: 2%;
@@ -13,7 +13,8 @@ pre.highlight, code.language-plaintext{
     background-color: rgb(32, 32, 32);
     font-size: 18px;
     padding: 1%;
-    border-radius: 8px;
+    border-radius: 5px;
+    border: var(--color-dark) 2px solid;
 
     overflow: auto;
     word-break: normal;
@@ -59,7 +60,7 @@ img{
     width: 30%;
     padding: 2%;
 
-    border: #071020 3px solid;
+    border: var(--color-dark) 3px solid;
     border-radius: 3px;
 }
 
@@ -74,7 +75,7 @@ img{
 
 blockquote{
     padding-left: 10px;
-    border-left: #316990 10px solid;
+    border-left: var(--color-blue) 10px solid;
 }
 
 blockquote > p{
