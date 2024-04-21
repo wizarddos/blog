@@ -3,6 +3,14 @@ layout: default
 comments: true
 ---
 
+{% if page.category == "Hacking" %}  
+    <script>
+        let path = window.location.pathname
+        console.log()
+        window.location = `https://wizarddos.github.io/cybersec-blog/writeups/${path.replace("/blog/hacking/", "")}`
+    </script>
+{% endif %}
+
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/monokai.css">
 <section class = "article">
     <h1 class = "centered">{{ page.title}} </h1>
