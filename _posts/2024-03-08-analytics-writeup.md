@@ -6,4 +6,4 @@ category: Hacking
 excerpt_separator: <!--more-->
 ---
 
-It's available [here](https://wizarddos.github.io/cybersec-blog/writeups/2024/03/08/analytics-writeup.html)
+It's available [here](https://wizarddos-infosec.netlify.app/writeups/2024/03/08/analytics-writeup.html)
