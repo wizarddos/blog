@@ -233,11 +233,11 @@ $_SESSION['isLoged'] = true;
 We'll write our code
 
 1. Check if user set checkbox
-```php
-if(isset($_POST['remember-me'])){
-        
-}
-```
+    ```php
+    if(isset($_POST['remember-me'])){
+            
+    }
+    ```
 
 2. Then we generate 2 random values
 ```php
@@ -294,14 +294,14 @@ try{
 }
 ```
 
-4. Search for correct token with selector
-```php
-$sql = "SELECT * FROM `tokens` WHERE `selector` = ?";
-$stmt = $db->prepare($sql);
-$stmt->execute([$cookie[0]]);
+4. Search for correct token using selector
+    ```php
+    $sql = "SELECT * FROM `tokens` WHERE `selector` = ?";
+    $stmt = $db->prepare($sql);
+    $stmt->execute([$cookie[0]]);
 
-$result = $stmt->fetch(PDO::FETCH_ASSOC);
-```
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    ```
 
 5. Check if they match
 ```php
