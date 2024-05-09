@@ -2,7 +2,7 @@
 layout: post
 title: "The Truth About Cookies: Friend or Foe?"
 author: wizarddos
-category: Programming
+category: cs-in-general
 excerpt_separator: <!--more-->
 ---
 
@@ -12,6 +12,8 @@ They are portrayed as the nr. 1 enemy in fight against big tech control
 
 But, are they really just bad? Can we use them for a good cause? 
 Let's take a look
+
+<!--more-->
 
 ## Cookies? Like from a bakery?
 
