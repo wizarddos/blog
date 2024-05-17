@@ -93,3 +93,7 @@ blockquote > p{
 .article-text > *{
     padding: 1%;
 }
+
+.img-medium{
+    width: 40%
+}
