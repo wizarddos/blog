@@ -1,0 +1,59 @@
+---
+---
+
+@import "base";
+@import "post";
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    height: 100vh;
+}
+
+.bigger-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.smaller-side {
+    width: 30%;
+    padding: 2%;
+}
+
+.small-tile{
+    width: 96%;
+    padding: 2%;
+    margin: 5%;
+    height: 30vh;
+}
+
+.big-tile{
+    width: 60%; 
+    padding: 2%;
+    margin: 5%;
+    height: 75vh;
+}
+
+.section-heading{
+    color: $side-color;
+}
+
+.pfp{
+    width: 30%;
+    border: 5px solid $side-color;
+    border-radius: 2%;
+
+}
+
+.about-me-tab{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me{
+    width: 60%;
+}

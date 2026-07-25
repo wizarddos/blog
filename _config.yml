@@ -1,0 +1,8 @@
+markdown: kramdown
+highlighter: rouge
+url: "https://wizarddos.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+title: "wizarddos blog" # the name of your site, e.g. ACME Corp.
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
