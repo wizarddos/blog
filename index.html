@@ -7,7 +7,7 @@ title: Home
     <section class = "bigger-side">
         <section class = "text-tiles small-tile">
             {% assign post = site.posts.first %}
-                <h3 class = "section-heading">$ query article --newest</h3>
+                <h3 class = "section-heading typing">$ query article --newest</h3>
                 <h2><i>{{ post.title }}</i></h2>
                 <p>
                     {{ post.excerpt }}
@@ -19,7 +19,7 @@ title: Home
         <section class="text-tiles small-tile about-me-tab">
             <img src="{{ site.baseurl }}/assets/img/pfp.jpeg" alt="my profile picture" class = "pfp"/>
             <section class = "about-me">
-                <h2 class = "section-heading">$ whoami </h2>
+                <h2 class = "section-heading typing">$ whoami </h2>
                 <p>
                    <b>wizarddos</b> - Cybersecurity resarcher, sofware developer and malware analyst <br/><br/>
                    <a href="/" class = "nav-link">Tell me more!</a>
@@ -28,6 +28,16 @@ title: Home
         </section>
     </section>
     <section class = "smaller-side text-tiles big-tile">
-        <h2 class = "section-heading">$ query article all  </h2>
+        <h2 class = "section-heading typing">$ query article all  </h2>
+        <ul>
+            {% for post in site.posts %}
+                <li class="post-list-item">
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link">
+                        {{ post.title }}
+                    </a>
+                </li>
+            {% endfor %}
     </section>
 </main>
+
+<script src="{{ site.baseurl }}/assets/js/typing.js"></script>

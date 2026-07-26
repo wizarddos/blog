@@ -28,7 +28,6 @@
     width: 96%;
     padding: 2%;
     margin: 5%;
-    height: 30vh;
 }
 
 .big-tile{
@@ -40,6 +39,8 @@
 
 .section-heading{
     color: $side-color;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
 }
 
 .pfp{
@@ -56,4 +57,9 @@
 
 .about-me{
     width: 60%;
+}
+
+.post-list-item{
+    margin: 5px 0;
+    list-style-type: none;
 }
