@@ -1,4 +1,5 @@
-function typeWriter(text, el) {
+let i = 0;
+function typeWriter(text, el, hiddenResult) {
     el.innerHTML = "";
     let index = 0;
     let interval = setInterval(function () {
@@ -7,14 +8,18 @@ function typeWriter(text, el) {
             index++;
         } else {
             clearInterval(interval);
+            hiddenResult.classList.remove("hidden");
         }
     }, 100); 
+    
  }
 
-const typingEl = document.getElementsByClassName("typing");
+const typingEl = document.querySelectorAll(".typing");
+const hiddenEl = document.querySelectorAll(".hidden");
 
-for(let i = 0; i < 3; i++){
-    const el = typingEl[i];
+
+typingEl.forEach(el => {
     const text = el.innerHTML;
-    typeWriter(text, el)
-}
+    id = typeWriter(text, el, hiddenEl[i])
+    i++;
+});

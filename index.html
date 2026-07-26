@@ -8,19 +8,21 @@ title: Home
         <section class = "text-tiles small-tile">
             {% assign post = site.posts.first %}
                 <h3 class = "section-heading typing">$ query article --newest</h3>
-                <h2><i>{{ post.title }}</i></h2>
-                <p>
-                    {{ post.excerpt }}
-                </p>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link"><br/>
-                    Continue reading
-                </a>
+                <section class = "hidden">
+                    <h2><i>{{ post.title }}</i></h2>
+                    
+                        {{ post.excerpt }}
+                    
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link"><br/>
+                        Continue reading
+                    </a>
+                </section>
         </section>
         <section class="text-tiles small-tile about-me-tab">
             <img src="{{ site.baseurl }}/assets/img/pfp.jpeg" alt="my profile picture" class = "pfp"/>
             <section class = "about-me">
                 <h2 class = "section-heading typing">$ whoami </h2>
-                <p>
+                <p class = "hidden">
                    <b>wizarddos</b> - Cybersecurity resarcher, sofware developer and malware analyst <br/><br/>
                    <a href="/" class = "nav-link">Tell me more!</a>
                 </p>
@@ -29,7 +31,7 @@ title: Home
     </section>
     <section class = "smaller-side text-tiles big-tile">
         <h2 class = "section-heading typing">$ query article all  </h2>
-        <ul>
+        <ul class = "hidden">
             {% for post in site.posts %}
                 <li class="post-list-item">
                     <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link">
