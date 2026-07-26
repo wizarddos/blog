@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<section class = "main-content">
+    <section class = "bigger-side">
+        <section class = "text-tiles small-tile">
+            <h3 class = "section-heading typing">$ query article --category {{ page.category }}</h3>
+            <ul class = "to-hide">
+                {% assign category_posts = site.posts | where: "category", page.category %}
+                {% for post in category_posts %}
+                    <li class="post-list-item">
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link">
+                            {{ post.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+
+
+                {% assign pnumber = category_posts | size %}
+                {% if pnumber == 0 %}
+                    <p style="text-align: center;">
+                        No posts found - but don't worry.<br/>
+                        This section will soon be filled with content
+                    </p>
+                {% endif %} 
+            </ul>
+        </section>
+    </section>
+    <section class = "smaller-side text-tiles big-tile">
+        <h2 class = "section-heading typing">$ query categories</h2>
+        <ul class = "to-hide">
+            {% for category in site.categories %}
+                <li class="post-list-item">
+                    <a href="{{ site.baseurl }}{{ category.url }}" class="nav-link category-link">
+                        | {{ category.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</section>

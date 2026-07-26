@@ -2,7 +2,7 @@
 layout: post
 title: CyberLens writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 excerpt_separator: <!--more-->
 ---
 

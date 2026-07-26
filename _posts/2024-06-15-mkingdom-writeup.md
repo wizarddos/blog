@@ -2,7 +2,7 @@
 layout: post
 title: mKingdom Writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 excerpt_separator: <!--more-->
 ---
 Wanna watch a video?

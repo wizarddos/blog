@@ -8,7 +8,7 @@ title: Home
         <section class = "text-tiles small-tile">
             {% assign post = site.posts.first %}
                 <h3 class = "section-heading typing">$ query article --newest</h3>
-                <section class = "hidden">
+                <section class = "to-hide">
                     <h2><i>{{ post.title }}</i></h2>
                     
                         {{ post.excerpt }}
@@ -22,7 +22,7 @@ title: Home
             <img src="{{ site.baseurl }}/assets/img/pfp.jpeg" alt="my profile picture" class = "pfp"/>
             <section class = "about-me">
                 <h2 class = "section-heading typing">$ whoami </h2>
-                <p class = "hidden">
+                <p class = "to-hide">
                    <b>wizarddos</b> - Cybersecurity resarcher, sofware developer and malware analyst <br/><br/>
                    <a href="/" class = "nav-link">Tell me more!</a>
                 </p>
@@ -30,16 +30,15 @@ title: Home
         </section>
     </section>
     <section class = "smaller-side text-tiles big-tile">
-        <h2 class = "section-heading typing">$ query article all  </h2>
-        <ul class = "hidden">
-            {% for post in site.posts %}
+        <h2 class = "section-heading typing">$ query categories</h2>
+        <ul class = "to-hide">
+            {% for category in site.categories %}
                 <li class="post-list-item">
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="nav-link">
-                        {{ post.title }}
+                    <a href="{{ site.baseurl }}{{ category.url }}" class="nav-link category-link">
+                        | {{ category.title }}
                     </a>
                 </li>
             {% endfor %}
+        </ul>
     </section>
 </main>
-
-<script src="{{ site.baseurl }}/assets/js/typing.js"></script>

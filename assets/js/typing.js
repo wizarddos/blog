@@ -1,3 +1,10 @@
+const typingEl = document.querySelectorAll(".typing");
+const hiddenEl = document.querySelectorAll(".to-hide");
+
+hiddenEl.forEach(el => {
+    el.classList.add("hidden");
+});
+
 let i = 0;
 function typeWriter(text, el, hiddenResult) {
     el.innerHTML = "";
@@ -14,8 +21,6 @@ function typeWriter(text, el, hiddenResult) {
     
  }
 
-const typingEl = document.querySelectorAll(".typing");
-const hiddenEl = document.querySelectorAll(".hidden");
 
 
 typingEl.forEach(el => {

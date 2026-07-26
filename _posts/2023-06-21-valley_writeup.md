@@ -2,7 +2,7 @@
 layout: post
 title: Valley writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 ---
 
 This challenge is from [TryHackMe](https://tryhackme.com/room/valleype)

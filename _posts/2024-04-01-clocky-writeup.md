@@ -2,7 +2,7 @@
 layout: post
 title: Clocky writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 excerpt_separator: <!--more-->
 ---
 

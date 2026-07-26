@@ -2,7 +2,7 @@
 layout: post
 title: Hijack writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 ---
 This challange is offensive one and based of hijacking from TryHackMe
 

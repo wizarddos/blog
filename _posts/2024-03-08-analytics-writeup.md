@@ -2,7 +2,7 @@
 layout: post
 title: Analytics writeup (HackTheBox)
 author: wizarddos
-category: writeups
+category: hackthebox
 excerpt_separator: <!--more-->
 ---
 

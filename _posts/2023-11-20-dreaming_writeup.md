@@ -2,7 +2,7 @@
 layout: post
 title: Dreaming writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 ---
 
 This is a fresh machine (while writing it was made today, I solved it 2 days after release, and I updated it 3 days after release)  

@@ -2,7 +2,7 @@
 layout: post
 title: Overpass 2 - Hacked writeup (TryHackMe)
 author: wizarddos
-category: writeups
+category: tryhackme
 ---
 
 This challange is from [TryHackMe](https://tryhackme.com/room/overpass2hacked)
